@@ -1,0 +1,484 @@
+{
+	"info": {
+		"_postman_id": "b844bf74-c8f8-4d25-8436-e2abed265297",
+		"name": "ProvaSenior",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/listarProdutos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"listarProdutos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeproduto\":\"cafe\",\r\n    \"valor\":10.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadastroProduto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadastroProduto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Produtos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"19f23ad3-418a-45ae-9c42-e7e5a6910834\",\r\n    \"nomeproduto\":\"arroz B\",\r\n    \"valor\":2.60   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alterarProdutos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alterarProdutos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Produtos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"19f23ad3-418a-45ae-9c42-e7e5a6910834\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/removerProdutos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"removerProdutos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricaopedido\":\"pedido Jose\",\r\n    \"valor\":\"100.45\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadastroPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadastroPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/listarPedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"listarPedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"c3fd2f9e-6ff2-4179-86a1-533692b5e568\",\r\n        \"descricaopedido\": \"pedido Lucas\",\r\n        \"valor\": 100.45\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/removerPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"removerPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"c3fd2f9e-6ff2-4179-86a1-533692b5e568\",\r\n        \"descricaopedido\": \"PedidoLucas\",\r\n        \"valor\": 100.45\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alterarPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alterarPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Servico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeservico\":\"pedreiro\",\r\n    \"valor\":120.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadastroServico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadastroServico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Servicos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/listarServicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"listarServicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Servico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"ca727888-e752-4a25-aa86-72a4eb1e278a\",\r\n        \"nomeservico\": \"Limpeza Condominio\",\r\n        \"valor\": 120.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/removerServico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"removerServico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Servico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"ca727888-e752-4a25-aa86-72a4eb1e278a\",\r\n        \"nomeservico\": \"Limpeza Condominio\",\r\n        \"valor\": 120.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alterarServico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alterarServico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Itens Pedidos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeitem\":\"Pedido1\",\r\n    \"idpedido\":{\r\n        \"id\": \"4fe532b5-1ad0-4c6f-b790-3c9229f4bca6\"\r\n    },\r\n    \"idservico\":{\r\n        \"id\":\"02f910c7-6568-408b-bb30-daad40e70626\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadastroItensPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadastroItensPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Itens Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/listarItensPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"listarItensPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Itens Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\":\"3d29ce9d-1ebb-413a-8269-afc0b1930792\",\r\n    \"nomeitem\":\"papel 23\",\r\n    \"idpedido\":{\r\n        \"id\": \"407757b7-dd65-476b-ba5f-bff1b36cc48f\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alterarItensPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alterarItensPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Itens Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\":\"3def7e15-2826-4ce9-a5a9-403c10e5efae\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/removerItensPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"removerItensPedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Desconto Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"632a9f8b-41bd-4b87-bf16-4c3555cbc47c\",\r\n        \"descricaopedido\": \"pedido Lucas\",\r\n        \"valor\": 100.45,\r\n        \"desconto\":10.00\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/descontoPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"descontoPedido"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

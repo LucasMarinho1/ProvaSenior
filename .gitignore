@@ -1,0 +1,60 @@
+### Java ###
+# Compiled class file
+*.class
+
+### Eclipse ###
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### Maven ###
+target/
+pom.xml.tag
+/.mvn
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+/mvnw
+mvnw.cmd
+
+
+# Eclipse Core      
+.project
+
+# JDT-specific (Eclipse Java Development Tools)     
+.classpath
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Ignore Git here
+.git
+
+HELP.md
